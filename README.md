@@ -1,0 +1,3 @@
+# Unexpected Async/Await Error Handling in Swift
+
+This example demonstrates a potential issue with error handling when using Swift's `async`/`await` within a `Task`.  The `fetchData()` function correctly handles potential errors during the network request. However, the main `Task`'s error handling might not catch all scenarios, particularly those related to task cancellation or unexpected exceptions outside the `fetchData()` function itself.  The solution shows how to improve error handling for robustness.
